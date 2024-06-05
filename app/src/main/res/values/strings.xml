@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">stud_ie_app</string>
+    <string name="registration_welcome">Hi There! I\'m Kevin, the recruiting manager of Stud.ie. We\'re excited to have you onboard, but before we can hire you, you\'re going to need to send in a resume!</string>
+    <string name="registration_two">Congratulations! We have reviewed your resume and are happy to hire you. Now it\'s time to take a photo for your Employee ID</string>
+</resources>

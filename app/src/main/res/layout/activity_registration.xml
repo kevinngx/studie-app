@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/backToLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onBackToLoginButtonPress"
+        android:text="Return to login"
+        android:textColor="#293D58"
+        app:layout_constraintEnd_toEndOf="@+id/registerButton"
+        app:layout_constraintStart_toStartOf="@+id/registerButton"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton" />
+
+    <TextView
+        android:id="@+id/registrationErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Username is already taken"
+        android:textColor="#FF4040"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/newPasswordTwo"
+        app:layout_constraintStart_toStartOf="@+id/newPasswordTwo"
+        app:layout_constraintTop_toBottomOf="@+id/newPasswordTwo" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/registerButton"
+        android:layout_width="262dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="onSubmitButtonPress"
+        android:text="Button"
+        app:cardBackgroundColor="#293D58"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newPasswordTwo"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/newPasswordTwo"
+        app:layout_constraintTop_toBottomOf="@+id/registrationErrorMessage"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Submit Resume"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/draw5"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/login_password"
+        app:layout_constraintBottom_toBottomOf="@+id/newPasswordOne"
+        app:layout_constraintEnd_toStartOf="@+id/newPasswordOne"
+        app:layout_constraintTop_toTopOf="@+id/newPasswordOne" />
+
+    <ImageView
+        android:id="@+id/draw6"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/login_password"
+        app:layout_constraintBottom_toBottomOf="@+id/newPasswordTwo"
+        app:layout_constraintEnd_toStartOf="@+id/newPasswordTwo"
+        app:layout_constraintTop_toTopOf="@+id/newPasswordTwo" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/login_user"
+        app:layout_constraintBottom_toBottomOf="@+id/newUsername"
+        app:layout_constraintEnd_toStartOf="@+id/newUsername"
+        app:layout_constraintTop_toTopOf="@+id/newUsername" />
+
+    <EditText
+        android:id="@+id/newUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#293D58"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/signup_message"
+        app:layout_constraintStart_toStartOf="@+id/signup_message"
+        app:layout_constraintTop_toBottomOf="@+id/signup_message" />
+
+    <EditText
+        android:id="@+id/newPasswordOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:textColor="#293D58"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/newUsername"
+        app:layout_constraintStart_toStartOf="@+id/newUsername"
+        app:layout_constraintTop_toBottomOf="@+id/newUsername" />
+
+    <EditText
+        android:id="@+id/newPasswordTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:textColor="#293D58"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/newPasswordOne"
+        app:layout_constraintStart_toStartOf="@+id/newPasswordOne"
+        app:layout_constraintTop_toBottomOf="@+id/newPasswordOne" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/signup_message"
+        android:layout_width="299dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/registration_introduction" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/registration_welcome"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Sign up"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
