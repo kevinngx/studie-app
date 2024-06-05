@@ -1,2 +1,2 @@
-# INFS3634_Assignment
+# Stud.ie App Project
 Gamified Learning App
